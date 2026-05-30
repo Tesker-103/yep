@@ -1,0 +1,33 @@
+-- Assume game's name is Game
+
+-- normal property names without null bytes will give the property
+print(game["Name"]) --> Game
+print(game["name"]) --> Game
+
+-- adding null bytes will give the property but will also warn
+print(game["Name" .. string.rep("\0", 1)]) --> Game (with warning)
+print(game["name" .. string.rep("\0", 1)]) --> Game (with warning)
+
+-- uppercasing the first letter in a string longer than 2^8 - 1 (255) characters will cause an error
+-- lowercasing the first letter will cause a warning and give the property, regardless of string size
+print(pcall(function() print(game["Name" .. string.rep("\0", 256)]) end)) --> false Name is not a valid member of Datamodel "Game"
+print(game["name" .. string.rep("\0", 256)]) --> Game (with warning)
+
+-- adding instances
+Instance.new("Part", game).Name = "Name"
+Instance.new("Part", game).Name = "name"
+
+-- instance under datamodel overrides properties with same property name, if first letter is lowercased
+-- if first letter is uppercased, it will provide the property and override the instance
+print(game["Name"]) --> Game
+print(game["name"]) --> Part with name "name"
+
+-- instance under datamodel overrides properties with same property name if null byte present, regardless of upper/lowercase
+print(game["Name" .. string.rep("\0", 1)]) --> Part with name "Name"
+print(game["name" .. string.rep("\0", 1)]) --> Part with name "name"
+print(game["Name" .. string.rep("\0", 256)]) --> Part with name "Name"
+print(game["name" .. string.rep("\0", 256)]) --> Part with name "name"
+
+-- cleanup
+game:FindFirstChild("Name"):Destroy()
+game:FindFirstChild("name"):Destroy()

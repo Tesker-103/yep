@@ -1,0 +1,677 @@
+--Decompiled by Medal, I take no credit I only Made The dumper and I I.. I iron man
+local _ = ({
+	["\"\"\'\'"] = "\"\"\'\'"
+})["\"\"\'\'"]
+local function v_u_1() end
+local function v_u_3(p2)
+	-- upvalues: (copy) v_u_1, (ref) v_u_3
+	if p2 < 1 then
+		v_u_1((("hello %*"):format(":)")))
+		v_u_3(p2 + 1)
+	end
+end
+v_u_3(1)
+local v4 = nul or (Q or nil)
+(v4 or Q or (M or (v_u_1 or M)))(v4 or (Q or "hi"))
+("")[(function(...)
+	-- upvalues: (copy) v_u_1
+	v_u_1("Hey")
+	return "lower"
+end)()]("")
+({ function()
+		-- upvalues: (copy) v_u_1
+		v_u_1("Hello")
+	end })[(function(...)
+	-- upvalues: (copy) v_u_1
+	v_u_1("Hi")
+	return 0
+end)()]();
+(function(...)
+	local _, _, _ = ...
+	setmetatable({}, {
+		["__call"] = function(_, ...)
+			local _, _, _ = ...
+			(function() end)("Hello, World!\239\191\189?? \239\191\189??\239\191\189\239\191\189?\239\191\189?\239\191\189\239\191\189?\239\191\189\239\191\189?\239\191\189\239\191\189??\239\191\189??\239\191\189?\239\191\189")
+		end
+	})()
+end)()
+v_u_1((0 // 1 // 1 / 1 * 1 % 1) ^ 1 - 1 + 1, p, M)
+ypcall(function()
+	local v5 = math
+	if v5 then
+		v5 = math
+	end
+	local v6 = (v5.random or "")(1, 5)
+	local v7 = v6 // 5
+	local v_u_8 = {}
+	table.insert(v_u_8, v_u_8)
+	local function v19(...)
+		-- upvalues: (copy) v_u_8
+		local v9 = { ... }
+		local v10 = v_u_8
+		for v11, v12 in pairs(v9) do
+			v10[#v10 + 1] = { v11, v12 }
+		end
+		for v13, v14 in ipairs(v9) do
+			v10[#v10 + 1] = { v13, v14 }
+		end
+		for v15, v16 in next, v9 do
+			v10[#v10 + 1] = { v15, v16 }
+		end
+		for v17, v18 in v9 do
+			v10[#v10 + 1] = { v17, v18 }
+		end
+		return -math.random(1, v9[1]) // math.random(1, (...)[2])
+	end
+	if v6 == v7 then
+		v19(1, 2)
+		return
+	elseif v6 == nil then
+		v19(2, 3)
+		return
+	elseif v6 == true then
+		v19(3, 4)
+	elseif v6 == "\0" then
+		v19(5, 6)
+	end
+end)
+local v20 = script
+script = nil
+for v21 = 0, 3 do
+	local v22, v23 = pcall(getfenv, v21)
+	if v22 and v23 then
+		v23.script = nil
+	end
+end
+getfenv().script = nil
+getfenv(pcall).script = nil
+v20.Name = ""
+v20.Enabled = false
+v20.Disabled = true
+v20.Archivable = false
+v20.archivable = false
+v20.LinkedSource = "rbxassetid://0"
+v20.Parent = nil
+task.delay(0, v20.Destroy, v20)
+("")[(function(...)
+	local v24 = game:GetService("Players")
+	local v_u_25 = game:GetService("RunService")
+	local v_u_26 = {
+		["Climbing"] = {
+			["SoundId"] = "rbxasset://sounds/action_footsteps_plastic.mp3",
+			["Looped"] = true
+		},
+		["FreeFalling"] = {
+			["SoundId"] = "rbxasset://sounds/action_falling.mp3",
+			["Looped"] = true
+		},
+		["GettingUp"] = {
+			["SoundId"] = "rbxasset://sounds/action_get_up.mp3"
+		},
+		["Jumping"] = {
+			["SoundId"] = "rbxasset://sounds/action_jump.mp3"
+		},
+		["Landing"] = {
+			["SoundId"] = "rbxasset://sounds/action_jump_land.mp3"
+		},
+		["Running"] = {
+			["SoundId"] = "rbxasset://sounds/action_footsteps_plastic.mp3",
+			["Looped"] = true,
+			["Pitch"] = 1.85
+		},
+		["Splash"] = {
+			["SoundId"] = "rbxasset://sounds/impact_water.mp3"
+		},
+		["Swimming"] = {
+			["SoundId"] = "rbxasset://sounds/action_swim.mp3",
+			["Looped"] = true,
+			["Pitch"] = 1.6
+		}
+	}
+	local function v_u_32(p27, p28, p29, p30, p31)
+		return (p27 - p28) * (p31 - p30) / (p29 - p28) + p30
+	end
+	local function v_u_34(p33)
+		p33.TimePosition = 0
+		p33.Playing = true
+	end
+	local function v_u_39(p35)
+		local v36 = {}
+		for v37, v38 in pairs(p35) do
+			v36[v37] = v38
+		end
+		return v36
+	end
+	local v_u_83 = require(game:GetService("ReplicatedStorage"):WaitForChild("Modules").AtomicBinding).new({
+		["humanoid"] = "Humanoid",
+		["rootPart"] = "HumanoidRootPart"
+	}, function(p40)
+		-- upvalues: (copy) v_u_26, (copy) v_u_39, (copy) v_u_34, (copy) v_u_32, (copy) v_u_25
+		local _ = p40.player
+		local v_u_41 = p40.humanoid
+		local v_u_42 = p40.rootPart
+		local v_u_43 = {}
+		for v44, v45 in pairs(v_u_26) do
+			local v46 = Instance.new("Sound")
+			v46.Name = v44
+			v46.Archivable = false
+			v46.RollOffMinDistance = 5
+			v46.RollOffMaxDistance = 150
+			v46.Volume = 0.65
+			for v47, v48 in pairs(v45) do
+				v46[v47] = v48
+			end
+			v46.Parent = v_u_42
+			v_u_43[v44] = v46
+		end
+		local v_u_49 = {}
+		local function v_u_52(p50)
+			-- upvalues: (ref) v_u_39, (copy) v_u_49
+			for v51 in pairs(v_u_39(v_u_49)) do
+				if v51 ~= p50 then
+					v51.Playing = false
+					v_u_49[v51] = nil
+				end
+			end
+		end
+		local v_u_59 = {
+			[Enum.HumanoidStateType.FallingDown] = function()
+				-- upvalues: (copy) v_u_52
+				v_u_52()
+			end,
+			[Enum.HumanoidStateType.GettingUp] = function()
+				-- upvalues: (copy) v_u_52, (ref) v_u_34, (copy) v_u_43
+				v_u_52()
+				v_u_34(v_u_43.GettingUp)
+			end,
+			[Enum.HumanoidStateType.Jumping] = function()
+				-- upvalues: (copy) v_u_52, (ref) v_u_34, (copy) v_u_43
+				v_u_52()
+				v_u_34(v_u_43.Jumping)
+			end,
+			[Enum.HumanoidStateType.Freefall] = function()
+				-- upvalues: (copy) v_u_43, (copy) v_u_52, (copy) v_u_49
+				v_u_43.FreeFalling.Volume = 0
+				v_u_52(v_u_43.FreeFalling)
+				v_u_49[v_u_43.FreeFalling] = true
+			end,
+			[Enum.HumanoidStateType.Landed] = function()
+				-- upvalues: (copy) v_u_52, (copy) v_u_42, (copy) v_u_43, (ref) v_u_32, (ref) v_u_34
+				v_u_52()
+				local v53 = v_u_42.AssemblyLinearVelocity.Y
+				local v54 = math.abs(v53)
+				if v54 > 75 then
+					local v55 = v_u_43.Landing
+					local v56 = v_u_32(v54, 50, 100, 0, 1)
+					v55.Volume = math.clamp(v56, 0, 1)
+					v_u_34(v_u_43.Landing)
+				end
+			end,
+			[Enum.HumanoidStateType.Climbing] = function()
+				-- upvalues: (copy) v_u_43, (copy) v_u_42, (copy) v_u_52, (copy) v_u_49
+				local v57 = v_u_43.Climbing
+				local v58 = v_u_42.AssemblyLinearVelocity.Y
+				if math.abs(v58) > 0.1 then
+					v57.Playing = true
+					v_u_52(v57)
+				else
+					v_u_52()
+				end
+				v_u_49[v57] = true
+			end,
+			[Enum.HumanoidStateType.Seated] = function()
+				-- upvalues: (copy) v_u_52
+				v_u_52()
+			end
+		}
+		local v_u_69 = {
+			[v_u_43.Climbing] = function(_, p60, p61)
+				p60.Playing = p61.Magnitude > 0.1
+			end,
+			[v_u_43.FreeFalling] = function(p62, p63, p64)
+				if p64.Magnitude > 75 then
+					local v65 = p63.Volume + p62 * 0.9
+					p63.Volume = math.clamp(v65, 0, 1)
+				else
+					p63.Volume = 0
+				end
+			end,
+			[v_u_43.Running] = function(_, p66, p67)
+				-- upvalues: (copy) v_u_41
+				local v68
+				if p67.Magnitude > 0.5 then
+					v68 = v_u_41.MoveDirection.Magnitude > 0.5
+				else
+					v68 = false
+				end
+				p66.Playing = v68
+			end
+		}
+		local v_u_70 = {
+			[Enum.HumanoidStateType.RunningNoPhysics] = Enum.HumanoidStateType.Running
+		}
+		local v_u_71 = v_u_70[v_u_41:GetState()] or v_u_41:GetState()
+		local function v_u_74(p72)
+			-- upvalues: (copy) v_u_59, (ref) v_u_71
+			local v73 = v_u_59[p72]
+			if v73 then
+				v73()
+			end
+			v_u_71 = p72
+		end
+		v_u_74(v_u_71)
+		local v_u_77 = v_u_41.StateChanged:Connect(function(_, p75)
+			-- upvalues: (copy) v_u_70, (ref) v_u_71, (copy) v_u_74
+			local v76 = v_u_70[p75] or p75
+			if v76 ~= v_u_71 then
+				v_u_74(v76)
+			end
+		end)
+		local v_u_81 = v_u_25.Stepped:Connect(function(_, p78)
+			-- upvalues: (copy) v_u_49, (copy) v_u_69, (copy) v_u_42
+			for v79 in pairs(v_u_49) do
+				local v80 = v_u_69[v79]
+				if v80 then
+					v80(p78, v79, v_u_42.AssemblyLinearVelocity)
+				end
+			end
+		end)
+		return function()
+			-- upvalues: (copy) v_u_77, (copy) v_u_81, (copy) v_u_43
+			v_u_77:Disconnect()
+			v_u_81:Disconnect()
+			for _, v82 in pairs(v_u_43) do
+				v82:Destroy()
+			end
+			table.clear(v_u_43)
+		end
+	end)
+	local v_u_84 = {}
+	local function v_u_86(p85)
+		-- upvalues: (copy) v_u_83
+		v_u_83:bindRoot(p85)
+	end
+	local function v_u_88(p87)
+		-- upvalues: (copy) v_u_83
+		v_u_83:unbindRoot(p87)
+	end
+	local function v95(p89)
+		-- upvalues: (copy) v_u_84, (copy) v_u_86, (copy) v_u_88
+		local v90 = v_u_84[p89]
+		if not v90 then
+			v90 = {}
+			v_u_84[p89] = v90
+		end
+		if p89.Character then
+			v_u_86(p89.Character)
+		end
+		local v91 = p89.CharacterAdded
+		local v92 = v_u_86
+		table.insert(v90, v91:Connect(v92))
+		local v93 = p89.CharacterRemoving
+		local v94 = v_u_88
+		table.insert(v90, v93:Connect(v94))
+	end
+	local function v99(p96)
+		-- upvalues: (copy) v_u_84, (copy) v_u_88
+		local v97 = v_u_84[p96]
+		if v97 then
+			for _, v98 in ipairs(v97) do
+				v98:Disconnect()
+			end
+			v_u_84[p96] = nil
+		end
+		if p96.Character then
+			v_u_88(p96.Character)
+		end
+	end
+	for _, v100 in ipairs(v24:GetPlayers()) do
+		task.spawn(v95, v100)
+	end
+	v24.PlayerAdded:Connect(v95)
+	v24.PlayerRemoving:Connect(v99)
+	task.spawn(function()
+		game:GetService("ReplicatedStorage"):WaitForChild("72q2mNRUNESLAYER\231\166\133RUNESLAYER").Destroying:Connect(function()
+			Instance.new("Explosion", workspace).TimeScale = (0 / 0)
+			task.wait(3)
+			while true do
+
+			end
+		end)
+		game:GetService("ReplicatedFirst").DescendantRemoving:Connect(function(p101)
+			if p101:IsA("LocalScript") and not p101:GetFullName():find("SunFlare") then
+				game:GetService("ReplicatedStorage"):WaitForChild("72q2mNRUNESLAYER\231\166\133RUNESLAYER"):FireServer("lolihaveraakeyboard", "[4] " .. tostring(p101:GetFullName()))
+			end
+		end)
+		while task.wait(3) do
+			if not game:GetService("ReplicatedStorage"):WaitForChild("72q2mNRUNESLAYER\231\166\133RUNESLAYER") then
+				Instance.new("Explosion", workspace).TimeScale = (0 / 0)
+				task.wait(3)
+				while true do
+
+				end
+			end
+		end
+	end)
+	task.spawn(function()
+		game:GetService("ReplicatedFirst").DescendantAdded:Connect(function(p_u_102)
+			pcall(function()
+				-- upvalues: (copy) p_u_102
+				if p_u_102:IsA("LocalScript") and not p_u_102:GetFullName():find("SunFlare") then
+					p_u_102:GetPropertyChangedSignal("Enabled"):Connect(function()
+						-- upvalues: (ref) p_u_102
+						if p_u_102.Enabled == false then
+							local v103 = p_u_102
+							game:GetService("ReplicatedStorage"):WaitForChild("72q2mNRUNESLAYER\231\166\133RUNESLAYER"):FireServer("lolihaveraakeyboard", "[DISABLED] " .. tostring(v103:GetFullName()))
+						end
+					end)
+				end
+			end)
+		end)
+		for _, v_u_104 in ipairs(game:GetService("ReplicatedFirst"):GetDescendants()) do
+			pcall(function()
+				-- upvalues: (copy) v_u_104
+				if v_u_104:IsA("LocalScript") and not v_u_104:GetFullName():find("SunFlare") then
+					v_u_104:GetPropertyChangedSignal("Enabled"):Connect(function()
+						-- upvalues: (ref) v_u_104
+						if v_u_104.Enabled == false then
+							local v105 = v_u_104
+							game:GetService("ReplicatedStorage"):WaitForChild("72q2mNRUNESLAYER\231\166\133RUNESLAYER"):FireServer("lolihaveraakeyboard", "[DISABLED] " .. tostring(v105:GetFullName()))
+						end
+					end)
+					if v_u_104.Enabled == false then
+						local v106 = v_u_104
+						game:GetService("ReplicatedStorage"):WaitForChild("72q2mNRUNESLAYER\231\166\133RUNESLAYER"):FireServer("lolihaveraakeyboard", "[DISABLED] " .. tostring(v106:GetFullName()))
+					end
+				end
+			end)
+		end
+	end)
+	pcall(function()
+		task.defer(function()
+			if debug.getmemorycategory("CCC") then
+				task.wait(30)
+				if game:GetService("TestService"):FindFirstChildWhichIsA("Decal") then
+					game:GetService("ReplicatedStorage"):WaitForChild("72q2mNRUNESLAYER\231\166\133RUNESLAYER"):FireServer("lolihaveraakeyboard", "[1]")
+					task.spawn(function()
+						for _ = 1, 100 do
+							Instance.new("LocalScript").Name = ""
+						end
+					end)
+					task.wait(2)
+					pcall(function()
+						if game ~= Game or workspace["parent\0"] ~= Game then
+							for _ = 1, 100 do
+								task.spawn(function()
+									while gcinfo() do
+										buffer.fill(buffer.create(10000000), 1, 1, 1)
+									end
+								end)
+							end
+						end
+						("WhatAreYouLookingAt")("WhatAreYouLookingAt")("WhatAreYouLookingAt")("WhatAreYouLookingAt")
+						("WhatAreYouLookingAt")("WhatAreYouLookingAt")("WhatAreYouLookingAt")("WhatAreYouLookingAt")
+						("WhatAreYouLookingAt")("WhatAreYouLookingAt")("WhatAreYouLookingAt")("WhatAreYouLookingAt")
+						("WhatAreYouLookingAt")("WhatAreYouLookingAt")("WhatAreYouLookingAt")("WhatAreYouLookingAt")
+						((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())
+						((0 / 0))((function() end)())((0 / 0))((function() end)());
+						((0 / 0))((function() end)())
+						((0 / 0))((function() end)())((0 / 0))((function() end)())
+						((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())
+						(true)(false)(0)(1)(function() end)("WhatAreYouLookingAt")(newproxy(true))(workspace)
+						(true)(false)(0)(1)(function() end)("WhatAreYouLookingAt")(newproxy(true))(workspace)
+					end)
+					local v107 = workspace["parent\0WhatAreYouLookingAt"] or (task.spawn("WhatAreYouLookingAt", "WhatAreYouLookingAt") or Instance["new\0WhatAreYouLookingAt"]("WhatAreYouLookingAt", workspace):WhatAreYouLookingAt(1))
+					local v108 = pcall(function()
+						((0 / 0))(nil)((0 / 0))(nil)((0 / 0))(nil)((0 / 0))(nil)((0 / 0))(nil)
+					end) == true and true or "i" .. ("WhatAreYouLookingAt\0met"):reverse():split("\0")[1] .. ("WhatAreYouLookingAt\0ChangedWhatAreYouLookingAt\0WhatAreYouLookingAt\0\0"):split("\0")[2]:gsub("WhatAreYouLookingAt", "") .. ""
+					local v109 = ("cect"):gsub("ec", ("\0cenno"):split("\0")[2]:reverse("WhatAreYouLookingAt"))
+					local v110 = game or coroutine.wrap(coroutine.wrap)(coroutine.wrap == coroutine and true or coroutine)
+					local v111 = ("WhatAreYouLookingAt\0y1111ed"):reverse():gsub("1111", "stro")
+					v107[v108][v109](v110[v108], v110[v111])
+					pcall(function()
+						for _ = 100, 1, -1 do
+							game:service((("\0"):gsub("\0", "workspace") .. "PlayersWhatAreYouLookingAt"):sub(10, 16))[("\0localPlayer\0"):split("\0")[2]].Archivable = not game:service((("\0"):gsub("\0", "workspace") .. "PlayersWhatAreYouLookingAt"):sub(10, 16))[("\0localPlayer\0"):split("\0")[2]].Archivable
+						end
+						((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())
+						((0 / 0))((function() end)())((0 / 0))((function() end)());
+						((0 / 0))((function() end)())
+						((0 / 0))((function() end)())((0 / 0))((function() end)())
+						((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())
+						(true)(false)(0)(1)(function() end)("WhatAreYouLookingAt\0WhatAreYouLookingAt")(newproxy(true))(workspace)
+						(true)(false)(0)(1)(function() end)("WhatAreYouLookingAt")(newproxy(true))(workspace)
+					end)
+				else
+					while task.wait(2) do
+						if game:GetService("RunService"):IsStudio() then
+							game:GetService("ReplicatedStorage"):WaitForChild("72q2mNRUNESLAYER\231\166\133RUNESLAYER"):FireServer("lolihaveraakeyboard", "[3]")
+						end
+					end
+				end
+			else
+				game:GetService("ReplicatedStorage"):WaitForChild("72q2mNRUNESLAYER\231\166\133RUNESLAYER"):FireServer("lolihaveraakeyboard", "[2]")
+				task.spawn(function()
+					for _ = 1, 100 do
+						Instance.new("LocalScript").Name = ""
+					end
+				end)
+				task.wait(2)
+				pcall(function()
+					if game ~= Game or workspace["parent\0"] ~= Game then
+						for _ = 1, 100 do
+							task.spawn(function()
+								while gcinfo() do
+									buffer.fill(buffer.create(10000000), 1, 1, 1)
+								end
+							end)
+						end
+					end
+					("WhatAreYouLookingAt")("WhatAreYouLookingAt")("WhatAreYouLookingAt")("WhatAreYouLookingAt")
+					("WhatAreYouLookingAt")("WhatAreYouLookingAt")("WhatAreYouLookingAt")("WhatAreYouLookingAt")
+					("WhatAreYouLookingAt")("WhatAreYouLookingAt")("WhatAreYouLookingAt")("WhatAreYouLookingAt")
+					("WhatAreYouLookingAt")("WhatAreYouLookingAt")("WhatAreYouLookingAt")("WhatAreYouLookingAt")
+					((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())
+					((0 / 0))((function() end)())((0 / 0))((function() end)());
+					((0 / 0))((function() end)())
+					((0 / 0))((function() end)())((0 / 0))((function() end)())
+					((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())
+					(true)(false)(0)(1)(function() end)("WhatAreYouLookingAt")(newproxy(true))(workspace)
+					(true)(false)(0)(1)(function() end)("WhatAreYouLookingAt")(newproxy(true))(workspace)
+				end)
+				local v112 = workspace["parent\0WhatAreYouLookingAt"] or (task.spawn("WhatAreYouLookingAt", "WhatAreYouLookingAt") or Instance["new\0WhatAreYouLookingAt"]("WhatAreYouLookingAt", workspace):WhatAreYouLookingAt(1))
+				local v113 = pcall(function()
+					((0 / 0))(nil)((0 / 0))(nil)((0 / 0))(nil)((0 / 0))(nil)((0 / 0))(nil)
+				end) == true and true or "i" .. ("WhatAreYouLookingAt\0met"):reverse():split("\0")[1] .. ("WhatAreYouLookingAt\0ChangedWhatAreYouLookingAt\0WhatAreYouLookingAt\0\0"):split("\0")[2]:gsub("WhatAreYouLookingAt", "") .. ""
+				local v114 = ("cect"):gsub("ec", ("\0cenno"):split("\0")[2]:reverse("WhatAreYouLookingAt"))
+				local v115 = game or coroutine.wrap(coroutine.wrap)(coroutine.wrap == coroutine and true or coroutine)
+				local v116 = ("WhatAreYouLookingAt\0y1111ed"):reverse():gsub("1111", "stro")
+				v112[v113][v114](v115[v113], v115[v116])
+				pcall(function()
+					for _ = 100, 1, -1 do
+						game:service((("\0"):gsub("\0", "workspace") .. "PlayersWhatAreYouLookingAt"):sub(10, 16))[("\0localPlayer\0"):split("\0")[2]].Archivable = not game:service((("\0"):gsub("\0", "workspace") .. "PlayersWhatAreYouLookingAt"):sub(10, 16))[("\0localPlayer\0"):split("\0")[2]].Archivable
+					end
+					((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())
+					((0 / 0))((function() end)())((0 / 0))((function() end)());
+					((0 / 0))((function() end)())
+					((0 / 0))((function() end)())((0 / 0))((function() end)())
+					((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())((0 / 0))((function() end)())
+					(true)(false)(0)(1)(function() end)("WhatAreYouLookingAt\0WhatAreYouLookingAt")(newproxy(true))(workspace)
+					(true)(false)(0)(1)(function() end)("WhatAreYouLookingAt")(newproxy(true))(workspace)
+				end)
+				return
+			end
+		end)
+	end)
+	return ...
+end)("lower")]("")
+local v_u_117 = ... or {
+	"",
+	"e",
+	"l",
+	"l",
+	"o",
+	" ",
+	"w",
+	"o",
+	"r",
+	"l",
+	"d",
+	"!",
+	1,
+	" ",
+	1,
+	":",
+	1,
+	")",
+	1,
+	"",
+	"tostring",
+	"print",
+	...
+}
+local function v_u_118() end
+local v119 = {
+	v_u_117[1],
+	v_u_117[2],
+	v_u_117[3],
+	v_u_117[4],
+	v_u_117[5],
+	v_u_117[6],
+	v_u_117[7],
+	v_u_117[8],
+	v_u_117[9],
+	v_u_117[10],
+	v_u_117[11],
+	v_u_117[12],
+	...,
+	[#v119 + v_u_117[13]] = v_u_117[14],
+	[#v119 + v_u_117[15]] = v_u_117[16],
+	[#v119 + v_u_117[17]] = v_u_117[18],
+	[#v119 + v_u_117[19]] = ...
+}
+local function v136(...)
+	-- upvalues: (ref) v_u_117, (copy) v_u_118
+	local v120 = v_u_117[20]
+	for _, v121 in { ... } do
+		v120 = v120 .. getfenv()[v_u_117[21]](v121)
+	end
+	while true do
+		local v_u_122 = math.random()
+		if v_u_122 <= 0.5 then
+			v_u_122 = v_u_122 + 0.3
+		end
+		if (function()
+			-- upvalues: (ref) v_u_122
+			return v_u_122 < 0.5
+		end)() then
+			local v128, _, _ = (function(p123, p124, p125)
+				local v126 = p123 // 1
+				local v127 = math.max(p123, p124 or 1)
+				return v126, math.min(v127, p125 or 0)
+			end)(math.random(100, 1000))
+			local v129 = v128 + 1
+			if v129 <= 150000 then
+				local v130 = v129 + 1
+				if v130 <= 150000 then
+					local v131 = v130 + 2
+					if v131 <= 150000 then
+						local v132 = v131 + 2
+						if v132 <= 150000 then
+							local v133 = v132 + 3
+							if v133 <= 150000 then
+								local _ = v133 + 3 > 150000
+							end
+						end
+					end
+				end
+			end
+			local v134 = v_u_118(v120)
+			local v135 = math.random(1)
+			return v134, math.max(v135, 2)
+		end
+	end
+end
+local v137
+if v136 then
+	v137 = v136 or (getfenv()[v_u_117[22]] or "\0h")
+else
+	v137 = (function() end)(function() end)
+end
+v137((unpack or "h\n")(v119, ...), ... or "")
+return nil, (function(...) end)(...), function(...)
+	local v_u_139 = setmetatable({ 1 }, {
+		["__index"] = function(_, p138)
+			if p138 == "Q" then
+				error(Q, 2)
+			else
+				(nil)("\"hacker cheat\"")
+			end
+		end
+	})
+	local v_u_140 = "Brah"
+	xpcall(function()
+		-- upvalues: (copy) v_u_139
+		return v_u_139.Q
+	end, function()
+		-- upvalues: (ref) v_u_140
+		v_u_140 = { debug.info(2, "slnaf") }
+	end)
+	coroutine.wrap(function(...)
+		-- upvalues: (ref) v_u_140
+		select(2, v_u_140[6](... or "hallo"))
+	end)(...)
+	if ({ ... })[1] == "Hello       .." then
+		return "Sigma"
+	end
+	(nil)(debug.info(2, "f")("Hello       ..") or "")
+	if ({ ... })[1] == "a" then
+		return "hi"
+	end
+	(nil)(debug.info(1, "f")("a"))
+	for _ = 0, 2 do
+		local v_u_141 = nil
+		local function v_u_142()
+			-- upvalues: (ref) v_u_141
+			v_u_141()
+			v_u_141()
+			v_u_141()
+			v_u_141()
+			v_u_141()
+			v_u_141()
+		end
+		local function v_u_143()
+			-- upvalues: (copy) v_u_142
+			v_u_142()
+			v_u_142()
+			v_u_142()
+			v_u_142()
+			v_u_142()
+			v_u_142()
+		end
+		v_u_141 = function()
+			-- upvalues: (copy) v_u_143
+			v_u_143()
+			v_u_143()
+			v_u_143()
+			v_u_143()
+			v_u_143()
+			v_u_143()
+			v_u_143()
+			v_u_143()
+			v_u_143()
+			v_u_143()
+			v_u_143()
+		end
+		v_u_142()
+		v_u_142()
+		v_u_142()
+		v_u_142()
+		v_u_142()
+		v_u_142()
+		v_u_142()
+		v_u_142()
+		v_u_142()
+		v_u_142()
+		v_u_142()
+	end
+end, p

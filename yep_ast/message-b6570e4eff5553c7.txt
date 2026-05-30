@@ -1,0 +1,59 @@
+  10:17:53.695  builtin_GameSettings.rbxm.GameSettingsPlugin.Src.Components.MainView:58: There are no pages in PageManifest with LocalizationId "Permissions"  -  Edit
+  10:17:53.695  Stack Begin  -  Studio
+  10:17:53.695  Script 'GameSettingsPlugin.GameSettingsPlugin.Src.Components.MainView', Line 58 - function init  -  Studio
+  10:17:53.696  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.DeveloperFramework.DeveloperFramework.UI.ContextServices.withContext', Line 73 - function init  -  Studio
+  10:17:53.696  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.Component', Line 327 - function __mount  -  Studio
+  10:17:53.696  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 408 - function mountVirtualNode  -  Studio
+  10:17:53.696  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 115 - function updateChildren  -  Studio
+  10:17:53.696  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 149 - function updateVirtualNodeWithRenderResult  -  Studio
+  10:17:53.696  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.Component', Line 338 - function __mount  -  Studio
+  10:17:53.696  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 408 - function mountVirtualNode  -  Studio
+  10:17:53.696  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 115 - function updateChildren  -  Studio
+  10:17:53.697  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 149 - function updateVirtualNodeWithRenderResult  -  Studio
+  10:17:53.697  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.Component', Line 338 - function __mount  -  Studio
+  10:17:53.697  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 408 - function mountVirtualNode  -  Studio
+  10:17:53.697  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 115 - function updateChildren  -  Studio
+  10:17:53.697  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 149 - function updateVirtualNodeWithRenderResult  -  Studio
+  10:17:53.697  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.Component', Line 338 - function __mount  -  Studio
+  10:17:53.697  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 408 - function mountVirtualNode  -  Studio
+  10:17:53.697  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 115 - function updateChildren  -  Studio
+  10:17:53.698  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 149 - function updateVirtualNodeWithRenderResult  -  Studio
+  10:17:53.698  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.Component', Line 338 - function __mount  -  Studio
+  10:17:53.698  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 408 - function mountVirtualNode  -  Studio
+  10:17:53.698  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 115 - function updateChildren  -  Studio
+  10:17:53.698  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 149 - function updateVirtualNodeWithRenderResult  -  Studio
+  10:17:53.698  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.Component', Line 338 - function __mount  -  Studio
+  10:17:53.698  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 408 - function mountVirtualNode  -  Studio
+  10:17:53.698  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 115 - function updateChildren  -  Studio
+  10:17:53.698  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 144 - function mountVirtualNode  -  Studio
+  10:17:53.699  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 115 - function updateChildren  -  Studio
+  10:17:53.699  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 149 - function updateVirtualNodeWithRenderResult  -  Studio
+  10:17:53.699  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.Component', Line 338 - function __mount  -  Studio
+  10:17:53.699  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 408 - function mountVirtualNode  -  Studio
+  10:17:53.699  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 115 - function updateChildren  -  Studio
+  10:17:53.700  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 144 - function mountVirtualNode  -  Studio
+  10:17:53.700  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 115 - function updateChildren  -  Studio
+  10:17:53.700  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 149 - function updateVirtualNodeWithRenderResult  -  Studio
+  10:17:53.700  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.Component', Line 338 - function __mount  -  Studio
+  10:17:53.700  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 408 - function mountVirtualNode  -  Studio
+  10:17:53.700  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 115 - function updateChildren  -  Studio
+  10:17:53.700  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 149 - function updateVirtualNodeWithRenderResult  -  Studio
+  10:17:53.700  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.Component', Line 338 - function __mount  -  Studio
+  10:17:53.700  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 408 - function mountVirtualNode  -  Studio
+  10:17:53.700  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 115 - function updateChildren  -  Studio
+  10:17:53.701  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 149 - function updateVirtualNodeWithRenderResult  -  Studio
+  10:17:53.701  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.Component', Line 338 - function __mount  -  Studio
+  10:17:53.701  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 408 - function mountVirtualNode  -  Studio
+  10:17:53.701  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 115 - function updateChildren  -  Studio
+  10:17:53.701  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 149 - function updateVirtualNodeWithRenderResult  -  Studio
+  10:17:53.701  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.Component', Line 338 - function __mount  -  Studio
+  10:17:53.701  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 408 - function mountVirtualNode  -  Studio
+  10:17:53.702  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 115 - function updateChildren  -  Studio
+  10:17:53.702  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 149 - function updateVirtualNodeWithRenderResult  -  Studio
+  10:17:53.702  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.Component', Line 338 - function __mount  -  Studio
+  10:17:53.702  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 408 - function mountVirtualNode  -  Studio
+  10:17:53.702  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.Roact.Roact.createReconciler', Line 444 - function mountVirtualTree  -  Studio
+  10:17:53.702  Script 'GameSettingsPlugin.GameSettingsPlugin.Bin.main', Line 325 - function openGameSettings  -  Studio
+  10:17:53.703  Script 'GameSettingsPlugin.GameSettingsPlugin.Bin.main', Line 365  -  Studio
+  10:17:53.703  Script 'GameSettingsPlugin.GameSettingsPlugin.Packages._Index.PluginLoader.PluginLoader.PluginLoader', Line 46  -  Studio
+  10:17:53.703  Stack End  -  Studio
